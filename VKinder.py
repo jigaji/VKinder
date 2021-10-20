@@ -200,6 +200,9 @@ class VKinder:
                 if event.type == VkBotEventType.MESSAGE_NEW:
                     self.peer_id = event.obj['message']['peer_id']
                     self.msg = event.obj['message']['text'].lower()
+                    if self.msg == 'помощь':
+                        response = self.handler.msg_handler(self.peer_id, self.msg)
+                        self.send_msg(self.peer_id, response)
                     if self.msg == 'найти кандидатов':
                         response = self.handler.msg_handler(self.peer_id, self.msg)
                         self.send_msg(self.peer_id, response)
@@ -220,6 +223,7 @@ class VKinder:
                                         if self.msg == 'стоп':
                                             resp = self.handler.msg_handler(self.peer_id, self.msg)
                                             self.send_msg(self.peer_id, resp)
+                                            pass
 
 
         except requests.exceptions.ReadTimeout:
