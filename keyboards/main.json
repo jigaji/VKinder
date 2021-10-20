@@ -1,0 +1,41 @@
+{
+  "one_time":  false,
+  "buttons": [
+    [
+      {
+        "action": {
+          "type": "text",
+          "label": "помощь"
+        },
+        "color": "primary"
+      }
+    ],
+    [
+      {
+        "action": {
+          "type": "text",
+          "label": "найти кандидатов"
+        },
+        "color": "positive"
+      }
+    ],
+    [
+      {
+        "action": {
+          "type": "text",
+          "label": "далее"
+        },
+        "color": "negative"
+      }
+    ],
+    [
+      {
+        "action": {
+          "type": "text",
+          "label": "стоп"
+        },
+        "color": "secondary"
+      }
+    ]
+  ]
+}
