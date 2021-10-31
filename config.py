@@ -1,3 +1,4 @@
 #Файл с токеном
-token = input("Введите токен от группы: ")
-token_api = input('Введите личный токен: ')
+
+token = '62004dc6974603ce2491534da65877cfd4a4b4024850487cd6751329c11f5aa9470dc322efc62ec1d44e5'
+token_api = 'fcbd4b6a6194ff66ce955b1b518857b72f21e75ec303c926a96f68e9c717cc1cf554cdec874f0731cdcbb'

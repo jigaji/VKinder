@@ -36,6 +36,15 @@
         },
         "color": "secondary"
       }
+    ],
+    [
+      {
+        "action": {
+          "type": "text",
+          "label": "добавить в черный список"
+        },
+        "color": "secondary"
+      }
     ]
   ]
 }

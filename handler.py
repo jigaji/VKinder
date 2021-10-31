@@ -2,11 +2,9 @@
 
 class Handler:
     def __init__(self):
-        self.peer_id = 0
         self.msg = ''
 
-    def msg_handler(self, peer_id, msg):
-        self.peer_id = peer_id
+    def msg_handler(self,  msg):
         self.msg = msg
         if self.msg == 'помощь':
             return 'Это программа для поиска потенциальных партнеров. ' \
@@ -15,6 +13,8 @@ class Handler:
                    'Нажмите кнопку "стоп" чтобы закончить'
         elif self.msg == 'найти кандидатов':
             return 'Введите id пользователя VK для поиска кандидатов'
+        elif self.msg == 'добавить в черный список':
+            return 'Данный пользователь добавлен в черный список'
         elif self.msg == 'далее':
             return 'Следующий кандидат'
         elif self.msg == 'стоп':
